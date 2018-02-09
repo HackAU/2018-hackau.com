@@ -1,245 +1,496 @@
-<!DOCTYPE html>
-<!-- saved from url=(0016)https://hack.gt/ -->
-<html><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hack-AU | April 24th - 25th | Ariel | 100 Hackers</title>
+    <link rel="shortcut icon" href="images/trans.png" type="image/x-icon"/>
 
-        <script src="js/bundle.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.pre2017f.min.css" data-finger-print>
-        <link rel="stylesheet" href="css/style.css">
-        <title>HackAU</title>
-    </head>
-    <body>
+    <meta name="description" content="Join us for Ariel's hackathon. 100 hackers. 36h. Apr 24th-25th.">
 
-        <section class="cover ">
-            <img src="assets/img/sky.jpg" class="star-sky is-overlay">
-            <div class="wrapper">
-                <div class="content">
-                    <h1 class="logotxt">HACK-AU</h1>
+    <!--Open graph properties-->
+    <meta property="og:title" content=">Hack-AU | April 24th - 25th | Ariel | 100 Hackers">
+    <meta property="og:site_name" content="Hack-AU">
+    <meta property="og:description" content="Join us for Ariel's hackathon. 100 hackers. 36h. Apr 24th-25th.">
+    <meta property="og:image" content="src/images/black-logo.png">
+    <meta property="og:url" content="https://hack-au.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--css files-->
+    <link rel="stylesheet" href="styles/main.2017f.css" data-finger-print>
+    <link rel="stylesheet" href="styles/style.css" data-finger-print>
 
-                    <div class="subtitle">> ./HACK THE IMPOSSIBLE  <br></div>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
 
-                    <div class="subscribe-section">
-                        <h4>HackAU coming soon in October!</h4>
-                        <h4>Subscribe to be the first to know when applications open.</h4>
-                        <br>
-                        <div class="form-section" id="mc_embed_signup">
-                            <div class="row top-buttons">
-                                <div class="col-md-12">
-                                    <div class="button-container">
-                                        <button name="subscribe">Apply!</button>
-                                        <button name="subscribe">Game</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- wrapper end -->
-
-
-        </section>
-
-
-
-
-        <div class="event-info">
-            <img class="top-boarder" src="assets/img/TopBoard.svg">
-            <div class="hex-commands">
-                <p>HackAU system init...</p>
-
-                <svg version="1.1" class="about selected" baseProfile="full" width="392" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 105 96 H 40 V 250" fill="transparent" stroke="#b4fff3" stroke-width="2"></path>
-                </svg>
-
-                <svg version="1.1" class="register" baseProfile="full" width="392" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 164 185 v 25 H 40 V 250" fill="transparent" stroke="#b4fff3" stroke-width="2"></path>
-                </svg>
-
-                <svg version="1.1" class="sponsor" baseProfile="full" width="392" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 229 185 v 25 H 40 V 250" fill="transparent" stroke="#b4fff3" stroke-width="2"></path>
-                </svg>
-
-                <svg version="1.1" class="atl" baseProfile="full" width="392" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 289 96 L 310 96 v 114 H 40 V 250" fill="transparent" stroke="#b4fff3" stroke-width="2"></path>
-                </svg>
-
-                <svg version="1.1" class="social" baseProfile="full" width="392" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 258 38 h 52 v 172 H 40 V 250" fill="transparent" stroke="#b4fff3" stroke-width="2"></path>
-                </svg>
-
-                <img class="register animate" width="64px" height="auto" src="assets/img/Tile2.png">
-                <img class="about animate selected" width="64px" height="auto" src="assets/img/Tile3.png">
-                <img class="sponsor animate" width="64px" height="auto" src="assets/img//Tile4.png">
-                <img class="atl animate" width="64px" height="auto" src="assets/img//Tile5.png">
-                <img class="social animate" width="64px" height="auto" src="assets/img//Tile6.png">
-
-                <img class="register-on clickable-img" width="64px" height="auto" src="assets/img//Tile2Highlight.png">
-                <img class="about-on clickable-img selected" width="64px" height="auto" src="assets/img//Tile3Highlight.png">
-                <img class="sponsor-on clickable-img" width="64px" height="auto" src="assets/img//Tile4Highlight.png">
-                <img class="atl-on clickable-img" width="64px" height="auto" src="assets/img//Tile5Highlight.png">
-                <img class="social-on clickable-img" width="64px" height="auto" src="assets/img//Tile6Highlight.png">
-            </div>
-            <input class="prompt" type="text">
-
+<body>
+<!--<a id="mlh-trust-badge"-->
+<!--style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000"-->
+<!--href="https://mlh.io/seasons/eu-2018/events?utm_source=eu-2018&utm_medium=TrustBadge&utm_campaign=eu-2018&utm_content=white"-->
+<!--target="_blank"><img src="images/svg/mlh.svg"-->
+<!--alt="Major League Hacking 2018 Hackathon Season" style="width:100%"></a>-->
+<div class="hide-nav">
+    <nav class="toc">
+        <ul>
+            <li><a href="#home" class="icon">Home</a></li>
+            <li><a href="#faq" class="icon">FAQ</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#video">Promotional Video</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#schedule">Schedule of Events</a></li>
+        </ul>
+        <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                  stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)"/>
+        </svg>
+    </nav>
+</div>
+<div class="container" style="-webkit-transform: translateZ(0);">
+    <div class="wrapper">
+        <div class="intro">
             <div class="content">
-                <div class="about box visible">
-                    HackAU is coming soon to Ariel University in November 1st-2nd.
-                    <h2>FAQ</h2>
-                    <div class="faq-question">
-                        <span class="question">Where?</span>
-                        <span class="answer">HackAU will take place in Ariel University's Library, building 56 (Lower Campus)</span>
-                    </div>
-                    <div class="faq-question">
-                        <span class="question">What should I bring?</span>
-                        <span class="answer">Bring your laptop, charger, headphones, and anything else you need. We'll supply meals, and snacks. More to come soon!</span>
-                    </div>
-                    <div class="faq-question">
-                        <span class="question">Who is eligible?</span>
-                        <span class="answer">Any student over the age of 18 enrolled in a college or university is allowed to participate, but anyone can be a mentor or volunteer. Teams can be up to four members - you can register with your team when you apply, or any time after you’re accepted, but you can also create a team at the event!</span>
-                    </div>
-                    <div class="faq-question">
-                        <span class="question">Are there any costs?</span>
-                        <span class="answer">The event is free, thanks to our sponsors! </span>
-                    </div>
-                    <div class="faq-question">
-                    <span class="question">Can I use past projects?</span>
-                    <span class="answer">True to the spirit of hackathons, you may not submit your past projects to HackAU.</span>
+                <h1 class="logotxt" id="home">HACK-AU</h1>
+                <div class="subtitle">> ./HACK THE IMPOSSIBLE <br></div>
+                <div id="countdown">
+                    <iframe src="http://free.timeanddate.com/countdown/i5uss2mu/n676/cf12/cm0/cu4/ct2/cs1/ca0/co0/cr0/ss0/cac00ff2a/cpc00ff2a/pct/tcfff/fn3/fs150/szw576/szh243/iso2018-05-02T13:00:00"
+                            allowTransparency="true" frameborder="0" width="290" height="73"
+                            sandbox="allow-same-origin allow-scripts"></iframe>
                 </div>
-                    <div class="faq-question">
-                        <span class="question">Do I need any experience to apply?</span>
-                        <span class="answer">Experience isn’t required. Hackathons are a place to learn for anybody at any level. Some of our past winners are also first-timers at a hackathon. But, if you’re still not convinced, like our <a href="https://facebook.com/hackau">Facebook page</a> for updates about workshops or events we’ll host before HackAU that’ll teach you some introductory skills!</span>
+
+                <div class="subscribe-section">
+                    <div class="answer" style="font-size: 1.4em;line-height: 2em;font-weight: normal;color: whitesmoke">
+                        <p> HackAU, Ariel University 1st annual hackathon is coming soon!<br>
+                            Subscribe to be the first to know when applications open.</p>
                     </div>
-                    <div class="faq-question">
-                        <span class="question">More questions? Ask us!</span>
-                        <span class="answer">Shoot us an email at <a href="mailto:elad@hack-au.com?subject=Question%20about%20HackAU%202017">hello@hack-au.com</a></span>
-                    </div>
-                </div>
-                <div class="register box">
-                    <p class="no-up-space">
-                        Travel Reimbursement Deadline: August 31
-                    </p>
-                    <p>
-                        Final Deadline: September 15
-                    </p>
-                    <br>
-                    <a href="https://registration.hack.gt/" class="button apply">Apply</a>
-                    <p>All attendees, mentors, volunteers, and staff are required to adhere to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p>
-                </div>
-                <div class="sponsor box">
-                    Interested in sponsoring HackAU 2017?
-                     contact us at <a href="mailto:haim@hack-au.com?subject=Sponsoring%20HackAU%202017">hello@hack-au.com</a>
-                </div>
-                <div class="atl box">
-<!--team start-->
-                    <div class="container">
-
-
-                            <div class="row">
-                                <div class="heading-title text-center">
-                                    <h3 class="text-uppercase">Our professionals </h3>
-                                    <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+                    <div class="form-section" id="mc_embed_signup">
+                        <form action="//hack-au.us16.list-manage.com/subscribe/post?u=a5e4e03e9e347d88aa6c4d538&amp;id=28f98e7b8a"
+                              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                              target="_blank">
+                            <div class="mc-field-group">
+                                <!--<input id="mce-EMAIL" name="EMAIL" type="text" class="form-control email-input"-->
+                                <!--placeholder="Enter your email..." required>-->
+                                <div id="mce-responses" class="clear">
+                                    <div class="response invisible" id="mce-error-response"></div>
+                                    <div class="response invisible" id="mce-success-response"></div>
                                 </div>
-
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="team-member">
-                                        <div class="team-img">
-                                            <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
-                                        </div>
-                                        <div class="team-hover">
-                                            <div class="desk">
-                                                <h4>Hi There !</h4>
-                                                <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                            </div>
-                                            <div class="s-link">
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-title">
-                                        <h5>Elad Keyshawn</h5>
-                                        <span>founder &amp; ceo</span>
-                                    </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div class="dont-touch" aria-hidden="true">
+                                    <input type="text" name="b_d49fc444ec7d45ce418dc02d2_3aeef9df9d" tabindex="-1"
+                                           value="">
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="team-member">
-                                        <div class="team-img">
-                                            <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
-                                        </div>
-                                        <div class="team-hover">
-                                            <div class="desk">
-                                                <h4>Hello World</h4>
-                                                <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                            </div>
-                                            <div class="s-link">
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </div>
-                                        </div>
+                                <center>
+                                    <div class="container button">
+                                        <!--<button name="subscribe" id="mc-embedded-subscribe"-->
+                                        <!--type="submit">Subscribe!-->
+                                        <!--</button>-->
+                                        <button style="margin-top: 10px"
+                                                onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSft9zdS6gNUkHUAMnP5za8fpY5aK_GWh37w7YiLfUnJGWPCfQ/viewform','_blank')">
+                                            Register
+                                        </button>
                                     </div>
-                                    <div class="team-title">
-                                        <h5>Shlomi Alon</h5>
-                                        <span>HR Manager</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="team-member">
-                                        <div class="team-img">
-                                            <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
-                                        </div>
-                                        <div class="team-hover">
-                                            <div class="desk">
-                                                <h4>I love to design</h4>
-                                                <p>I love to introduce myself as a hardcore Web Designer.</p>
-                                            </div>
-                                            <div class="s-link">
-                                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-title">
-                                        <h5>Haim Schlesinger</h5>
-                                        <span>Marketing Manager</span>
-                                    </div>
-                                </div>
-
+                                </center>
                             </div>
-
-                        </div>
-
-
-<!--team end-->
-
-
-                </div>
-                <div class="social box">
-                    <a href="https://twitter.com/thehackgt">Twitter</a> |
-                    <a href="https://facebook.com/hackgt">Facebook</a> |
-                    <a href="https://www.youtube.com/channel/UC6DiHJEOaHe9EP6ZE9SUgmw">Youtube</a> |
-                    <a href="https://www.instagram.com/thehackgt/">Instagram</a>
-                </div>
-            </div>
-
-            <div class="footer">
-                    <div class="socials-links">
-                        <a class="fa fa-2x fa-envelope" target="_blank" href="mailto:shlomi@hack-au.com"></a>
-                        <a class="fa fa-2x fa-facebook-official" target="_blank" href="https://facebook.com/HackAU"></a>
-                        <a class="fa fa-2x fa-github" target="_blank" href="https://github.com/HackAU"></a>
+                        </form>
                     </div>
-                <p>Made with ❤ by HackAU Team</p>
+                </div>
             </div>
         </div>
-        <img class="left-border" src="assets/img/FutureBounding.png">
-        <img class="right-border" src="assets/img/FutureBounding.png">
+    </div>
 
+    <!-- FAQ -->
+    <section id="faq">
+        <h1 class="faq-title">FAQ</h1>
+        <div class="row faq-questions">
+            <div class="col-md-4 question">
+                <div class="title">What is a hackathon?</div>
+                <div class="answer">Hackathons are awesome events full of creativity, technology and passionate
+                    tech-related students collaborating and creating. Attendees work in teams to create apps, games,
+                    robots… literally anything you want to build & learn about!
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">What is Hack-AU?
+                </div>
+                <div class="answer">Hack-AU is the first student hackathon in Ariel. This will be our first edition
+                    with 100 awesome hackers and lots of side activities to learn new technologies, meet interesting
+                    people and have fun. Come make history with us!
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">When is Hack-AU?
+                </div>
+                <div class="answer">Registration for Hack-AU will open at ____. The opening ceremony starts at 7:00PM
+                    _______________. We expect to finish by ________.
+                </div>
+            </div>
+        </div>
+        <div class="row faq-questions">
+            <div class="col-md-4 question">
+                <div class="title">How much does it cost?</div>
+                <div class="answer">Hack-AU is free for all accepted hackers. We will provide you WiFi, meals, swag, and
+                    workspace.
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">What can I build?</div>
+                <div class="answer">Web, mobile, hardware, anything is on the table. Projects will be judged based on
+                    creativity, technical difficulty, polish and usefulness by a panel of industry judges and Hack-AU
+                    faculty.
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">Will there be travel reimbursements available?</div>
+                <div class="answer">YES! We are giving up to 50€ if you’re travelling from Spain and up to 100€ if
+                    you’re travelling from outside of Spain. We want to give to all of you the opportunity of joining
+                    us!
+                </div>
+            </div>
+        </div>
+        <div class="row faq-questions">
+            <div class="col-md-4 question">
+                <div class="title">What if I don't have a team?</div>
+                <div class="answer">No need to worry! Part of the fun of a hackathon is meeting new people. We will have
+                    time at the beginning of the event for everyone to meet and form teams.
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">Where is it being held?</div>
+                <div class="answer">Hack-AU will take place in library Campus lower.<a
+                        href="https://www.google.com/maps/place/%D7%A1%D7%A4%D7%A8%D7%99%D7%99%D7%AA+%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA+%D7%90%D7%A8%D7%99%D7%90%D7%9C%E2%80%AD/@32.226743,34.747009,9z/data=!4m8!1m2!2m1!1z15DXldeg15nXkdeo16HXmdeY16og15DXqNeZ15DXnCDXkdep15XXnteo15XXnyDXodek16jXmdeZ15Q!3m4!1s0x151d277b21a01b7b:0x1c54faf7546ce7a7!8m2!3d32.1051676!4d35.2068599?hl=iw"
+                        target="_blank"> click me</a>
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">What should I bring?</div>
+                <div class="answer">All attendees must bring a valid ID for admission. Other common checklist items
+                    include: laptops, chargers, sleeping bags and toiletries. If you want to shower, bring a towel!
+                </div>
+            </div>
+        </div>
+        <div class="row faq-questions">
+            <div class="col-md-4 question">
+                <div class="title">What if I have another question?</div>
+                <div class="answer">contact us at <a href="https://www.facebook.com/hackarielu/" target="_blank">@hackarielu</a>
+                    or
+                    drop us a line at <a href="mailto:info@hack-au.com">info@hack-au.com</a></div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">Who can attend?</div>
+                <div class="answer">Students from universities and high schools from all around the world.</div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">What if I am not a student?</div>
+                <div class="answer">We accept students up to 1 year after graduation. You can also join us as a mentor!
+                    <a target="_blank" href="mailto:info@hack-au.com">Contact us</a> for more info.
+                </div>
+            </div>
+        </div>
+        <div class="row faq-questions">
+            <div class="col-md-4 question">
+                <div class="title">Do you have a code of conduct?</div>
+                <div class="answer"><a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">Yes</a>.
+                    tl;dr: Be excellent to each other.
+                </div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">How big can teams be?</div>
+                <div class="answer">Teams of up to four are welcome. You can also hack solo if you want!</div>
+            </div>
+            <div class="col-md-4 question">
+                <div class="title">How can I become a volunteer?</div>
+                <div class="answer">Are you a Ariel student? Would you like to give us a hand during Hack-AU? Help us
+                    make
+                    this happen and welcome over 100 awesome hackers in Barcelona.
+                </div>
+            </div>
+        </div>
+    </section>
 
-</body></html>
+    <!--team section-->
+    <section id="team">
+        <div class="container">
+            <div class="at-section">
+                <h1>The Team</h1>
+            </div>
+            <div class="at-grid" data-column="3">
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img
+                                src="images/haim.jpg"/></div>
+                        <div class="at-user__name">Haim Schlesinger</div>
+                        <div class="at-user__title">CEO &amp; Co-Founder</div>
+                        <div class="at-social">
+                            <li class="at-social__item"><a href="https://www.facebook.com/Shlez1993" target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                            <li class="at-social__item"><a href="https://github.com/haim1993" target="_blank">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+                                </svg>
+
+                            </a></li>
+                            <li class="at-social__item"><a href="https://www.linkedin.com/in/shlez1993/"
+                                                           target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img
+                                src="images/shlomi.png"/></div>
+                        <div class="at-user__name">Shlomi Alon</div>
+                        <div class="at-user__title">Co-Founder, Creative Director</div>
+                        <div class="at-social">
+                            <li class="at-social__item"><a href="https://facebook.com/shlomi.alon93" target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                            <li class="at-social__item"><a href="https://github.com/shlomialon" target="_blank">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+                                </svg>
+                            </a></li>
+                            <li class="at-social__item"><a href="https://www.linkedin.com/in/shlomi-alon/"
+                                                           target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="at-column">
+                    <div class="at-user">
+                        <div class="at-user__avatar"><img
+                                src="images/elad.jpg"/></div>
+                        <div class="at-user__name">Elad Keyshawn</div>
+                        <div class="at-user__title">Office Manager</div>
+                        <div class="at-social">
+                            <li class="at-social__item"><a href="https://www.facebook.com/elad.keyshawn"
+                                                           target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                            <li class="at-social__item"><a href="https://github.com/EladKeyshawn" target="_blank">
+                                <svg viewBox="0 0 512 512">
+                                    <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/>
+                                </svg>
+
+                            </a></li>
+                            <li class="at-social__item"><a href="https://il.linkedin.com/in/elad-keyshawn-a68938119"
+                                                           target="_blank">
+                                <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"
+                                          fill-rule="evenodd"></path>
+                                </svg>
+                            </a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--video-->
+    <section id="video">
+        <h1 class="video-title">Promotional Video</h1>
+        <iframe id="promo-video" class="center-block" src="https://www.youtube.com/embed/qj4DQfYx2Hg" frameborder="0"
+                allowfullscreen></iframe>
+    </section>
+
+    <!--sponsors-->
+    <section id="sponsors">
+        <h1 class="sponsors-title">Sponsors</h1>
+        <div class="row sponsor-images">
+            <div class="peta col-md-12">
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+            </div>
+
+            <div class="giga col-md-12">
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+            </div>
+
+            <div class="mega col-md-12">
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+            </div>
+
+            <div class="kilo col-md-12">
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml mr" src="images/trans.png"></a>
+            </div>
+
+            <div class="micro col-md-12">
+                <a href="" target="_blank"><img class="mr" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="" src="images/trans.png"></a>
+                <a href="" target="_blank"><img class="ml" src="images/trans.png"></a>
+            </div>
+        </div>
+        <div class="row top-buttons">
+            <div class="col-md-12">
+                <div class="button-container">
+                    <a href="mailto:info@hack-au.com" target="_blank">Support us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--partners-->
+    <section id="partners">
+        <h1 class="partners-title">Partners</h1>
+        <div class="row partners">
+            <div class="col-md-12">
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <div class="separator"></div>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <div class="separator"></div>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+                <a href="" target="_blank"><img src="images/trans.png"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--section schedule of events-->
+    <section class="container" id="schedule">
+        <h1 class="video-title">Schedule of Events</h1>
+        <div class="schedule">
+            <li class="date">
+                <h3>Apr 24</h3>
+                <p>Schedule of Events</p>
+            </li>
+            <li class="events">
+                <ul class="events-detail">
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="date">
+                <h3>Apr 25</h3>
+                <p>Schedule of Events</p>
+            </li>
+            <li class="events cf">
+                <ul class="events-detail">
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="event-time">2:00pm - </span>
+                            <span class="event-name">Kickoff Ceremony</span>
+                            <br/>
+                            <span class="event-location">Headquarters</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </section>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="socials-links">
+            <a class="fa fa-2x fa-envelope" target="_blank" href="mailto:info@hack-au.com"></a>
+            <a class="fa fa-2x fa-facebook-official" target="_blank"
+               href="https://www.facebook.com/Hack-AU-153697891875589/"></a>
+            <a class="fa fa-2x fa-github" target="_blank" href="https://github.com/HackAU"></a>
+        </div>
+        <p><font color="white">Made with <span id="heart">❤</span> by HackAU Team</font></p>
+    </div>
+</div>
+
+<!--scripts area-->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="js/binary-animation-min.js"></script>
+<script src="js/navbar.js"></script>
+</body>
+</html>
