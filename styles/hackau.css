@@ -16,3 +16,75 @@
 .faq-questions .question {
     margin-bottom: 5vh;
 }
+
+
+
+.sponsor-images {
+    text-align: center;
+}
+.sponsor-images .peta {
+    margin-bottom: 10vh;
+}
+.sponsor-images .peta img {
+    width: 63%;
+}
+.sponsor-images .giga {
+    margin-bottom: 10vh;
+}
+.sponsor-images .giga img {
+    width: 50%;
+}
+.sponsor-images .mega {
+    margin-bottom: 8vh;
+}
+.sponsor-images .mega img {
+    width: 38%;
+}
+.sponsor-images .kilo {
+    margin-bottom: 8vh;
+}
+.sponsor-images .kilo img {
+    width: 25%;
+}
+.sponsor-images .mili {
+    margin-bottom: 8vh;
+}
+.sponsor-images .mili img {
+    width: 20%;
+}
+.sponsor-images .micro img {
+    width: 15%;
+}
+.sponsor-images img.mr {
+    margin-right: 25px;
+}
+.sponsor-images img.ml {
+    margin-left: 25px;
+}
+.sponsor-images img.mega-portrait {
+    width: 15%;
+}
+.sponsor-images img.giga-portrait {
+    width: 18%;
+}
+.sponsor-images .separator {
+    height: 5vh;
+}
+
+.partners {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+.partners img {
+    width: 12%;
+    margin: 0px 20px;
+}
+.partners .separator {
+    height: 5vh;
+}
+
+#promo-video {
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+}
