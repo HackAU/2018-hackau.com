@@ -1,0 +1,18 @@
+.buffer-top {
+    margin-top: 5%;
+}
+
+
+
+.faq-questions .title {
+    font-size: 1.6em;
+    color: #E91753;
+}
+.faq-questions .answer {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    font-weight: normal;
+}
+.faq-questions .question {
+    margin-bottom: 5vh;
+}
