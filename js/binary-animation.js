@@ -107,22 +107,22 @@ var BinaryAnimation = function () {
     _createClass(BinaryAnimation, [{
         key: "start",
         value: function start() {
-            var obj_array = [];
-            var counter = 0;
-            setInterval(function () {
+            var obj_map = {};
+            var idx = 0;
+            var interval = setInterval(function () {
+                obj_map[idx] = (new BinaryLine(Random.generate(0, $(document).width()), Random.generate($(document).width() * 0.008, $(document).width() * 0.012), $(document).height()).generate());
+                console.log('currently ' + idx + ' objects alive.');
+                idx++;
 
-                obj_array.push(new BinaryLine(Random.generate(0, $(document).width()), Random.generate($(document).width() * 0.008, $(document).width() * 0.012), $(document).height()).generate());
-                console.log('currently ' + counter + ' objects alive.');
-                counter++;
+                if(idx > 5) {
+                    $(".binary").remove();
+                    while (idx >= 0) {
+                        delete obj_map[idx];
+                        idx--;
+                    }
+                }
             }, 2000);
 
-            setInterval(function () {
-                $(".binary").remove();
-                console.log('destroying ' + obj_array.length + ' objects');
-                while (obj_array.length > 0) {
-                    delete obj_array.pop();
-                }
-            }, 30000);
         }
     }]);
 
