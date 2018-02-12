@@ -63,7 +63,11 @@
 .sponsor-images .kilo {
     margin-bottom: 8vh;
 }
-.sponsor-images .kilo img {
+.sponsor-images .kilo img{
+    width: 25%;
+}
+
+.sponsor-images .kilo svg{
     width: 25%;
 }
 .sponsor-images .mili {
