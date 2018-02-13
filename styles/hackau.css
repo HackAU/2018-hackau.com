@@ -4,6 +4,13 @@
 
 }
 
+.buffer-right {
+    margin-right: 8%;
+}
+
+
+
+
 .button-register{
     color: white;
     display: inline-block;
@@ -111,4 +118,19 @@
     max-width: 700px;
     width: 100%;
     height: 400px;
+}
+
+
+.mlh-localhost-svg-animated {
+    -webkit-transition: fill 0.2s ease-out;
+    -moz-transition: fill 0.2s ease-out;
+    -o-transition: fill 0.2s ease-out;
+    -ms-transition: fill 0.2s ease-out;
+    transition: fill 0.2s ease-out;
+}
+
+
+.mlh-localhost-svg-animated:hover{
+    fill: #265A8F;
+
 }
