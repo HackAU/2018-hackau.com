@@ -32,10 +32,14 @@ var Random = function () {
 }();
 
 var Binary = function () {
-    function Binary() {
+    function Binary(value) {
         _classCallCheck(this, Binary);
 
-        this.value = Random.generateBinary();
+        if(value) {
+            this.value = value;
+        } else {
+            this.value = Random.generateBinary();
+        }
     }
 
     _createClass(Binary, [{
@@ -70,23 +74,38 @@ var BinaryLine = function () {
     function BinaryLine(lO, tS, dS) {
         _classCallCheck(this, BinaryLine);
 
-        this.leftOffset = lO;
-        this.textSize = tS;
-        this.documentSize = dS;
+        this.leftOffset = lO || Random.generate(0, $(document).width());
+        this.textSize = tS || Random.generate($(document).width() * 0.008, $(document).width() * 0.012);
+        this.documentSize = dS || $(document).height();
     }
 
     _createClass(BinaryLine, [{
         key: "generate",
-        value: function generate() {
-            var iterator = 1;
+        value: function generate(binaryStr) {
+            var iterator = 0;
             var size = this.length;
             var fontSize = this.textSize;
             var documentSize = this.documentSize;
             var currentOffset = 0;
             var leftOffset = this.leftOffset;
+
+            var binDigitIdx = 0;
+
             var interval = setInterval(function () {
+                var binary;
+
                 if (currentOffset < documentSize) {
-                    var binary = new Binary();
+                    if(binaryStr){
+                        if(binDigitIdx < binaryStr.length) {
+                            binary = new Binary(parseInt(binaryStr[binDigitIdx]));
+                        } else {
+                            binDigitIdx = 0;
+                            binary = new Binary(parseInt(binaryStr[binDigitIdx]));
+                        }
+                    }
+                    else {
+                        binary = new Binary();
+                    }
                     currentOffset = binary.animate(fontSize, leftOffset, iterator);
                     iterator++;
                 } else {
@@ -110,8 +129,7 @@ var BinaryAnimation = function () {
             var obj_map = {};
             var idx = 0;
             var interval = setInterval(function () {
-                obj_map[idx] = (new BinaryLine(Random.generate(0, $(document).width()), Random.generate($(document).width() * 0.008, $(document).width() * 0.012), $(document).height()).generate());
-                console.log('currently ' + idx + ' objects alive.');
+                obj_map[idx] = (new BinaryLine().generate("111111111111111111111111111"));
                 idx++;
 
                 if(idx > 5) {
