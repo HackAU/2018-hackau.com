@@ -536,7 +536,7 @@ h1, h2 {
 }
 
 .at-column:hover {
-    background: #1a000d;
+    background: #141F34;
     z-index: 1;
     -webkit-box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
     box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
@@ -584,8 +584,8 @@ h1, h2 {
 }
 
 .at-user__avatar {
-    width: 98px;
-    height: 98px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
     margin: 0 auto 20px;
     overflow: hidden;

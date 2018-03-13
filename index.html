@@ -24,16 +24,74 @@
 
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--scripts area-->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <!--<script src="js/binary-animation.js"></script>-->
+
+    <script>
+        $(document).ready(function(){
+            if ($(window).width() < 768) {
+                $("#menu").click(function() {
+                    if($('#menu-list').css('display') == 'none') {
+                        $("#menu").parent().css('border-bottom', "0.5px solid white");
+                        $("#menu-list").show();
+                    }
+                    else {
+                        $("#menu-list").hide();
+                        $("#menu").parent().css('border-bottom', "0");
+                    }
+                });
+                $("#menu-list").find("li").find("div").find("a").click(function() {
+                    $("#menu-list").hide();
+                    $("#menu").parent().css('border-bottom', "0");
+                });
+
+            }
+        });
+    </script>
 </head>
 
 <body>
 
+<!-- header -->
+<div id="header" class="row">
+    <div>
+        <img id="menu" class="menu" src="images/ic_menu_white_24dp_2x.png"/>
+    </div>
+    <ul id="menu-list">
+        <li>
+            <div><a href="#">Register</a></div>
+            <div></div>
+        </li>
+        <li>
+            <div><a href="#schedule">Schedule</a></div>
+            <div></div>
+        </li>
+        <li>
+            <div><a href="#faq">FAQ</a></div>
+            <div></div>
+        </li>
+        <li>
+            <div><a href="#video">Video</a></div>
+            <div></div>
+        </li>
+        <li>
+            <div><a href="#sponsors">Sponsors</a></div>
+            <div></div>
+        </li>
+        <li>
+            <div><a href="#team">The Team</a></div>
+            <div></div>
+        </li>
+    </ul>
+</div>
 
 <div class="page text-center">
     <div class="content">
         <div class="container">
 
-            <div class="row">
+            <div class="row" id="title">
                 <h1 class="logotxt">HACK-AU</h1>
 
                 <div class="subtitle">> ./HACK THE IMPOSSIBLE <br></div>
@@ -75,7 +133,7 @@
 
 
 <!--section schedule of events-->
-<section id="schedule">
+<section id="schedule" name="schedule" class="href-padding">
     <div class="container">
         <div class="row">
             <h1 class="video-title">Schedule</h1>
@@ -215,7 +273,7 @@
 
 
 <!-- FAQ -->
-<section id="faq" class="buffer-top">
+<section id="faq" name="faq" class="buffer-top href-padding">
     <div class="container">
         <h1 class="faq-title">Questions?</h1>
         <div class="row faq-questions buffer-top">
@@ -300,7 +358,7 @@
 </section>
 
 <!--video-->
-<section id="video">
+<section id="video" name="video" class="href-padding">
     <div class="container">
         <div class="row">
             <h1 class="video-title">What does it feel like?</h1>
@@ -316,7 +374,7 @@
 </section>
 
 <!--sponsors-->
-<section id="sponsors" class="buffer-top">
+<section id="sponsors" name="sponsors" class="buffer-top href-padding">
     <h1 class="sponsors-title">Partners</h1>
     <div class="row sponsor-images buffer-top">
 
@@ -352,7 +410,7 @@
 
 
 <!--team section-->
-<section id="team" class="buffer-top">
+<section id="team" name="team" class="buffer-top href-padding">
     <div class="container">
         <div class="at-section">
             <h1>The Team</h1>
@@ -387,6 +445,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar"><img
@@ -415,6 +474,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="at-column">
                 <div class="at-user">
                     <div class="at-user__avatar"><img
@@ -445,6 +505,25 @@
                     </div>
                 </div>
             </div>
+
+            <div class="at-column">
+                <div class="at-user">
+                    <div class="at-user__avatar"><img
+                            src="images/amit.jpeg"/></div>
+                    <div class="at-user__name">Dr. Amit Dvir</div>
+                    <div class="at-user__title">Academic Director</div>
+                    <div class="at-social">
+                        <li class="at-social__item"><a href="https://www.linkedin.com/in/amit-dvir-b3111b7/"
+                                                       target="_blank">
+                            <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z"
+                                      fill-rule="evenodd"></path>
+                            </svg>
+                        </a></li>
+                    </div>
+                </div>
+            </div>
+            <!-- Add here another -->
         </div>
     </div>
 </section>
@@ -462,8 +541,5 @@
 </div>
 </div>
 
-<!--scripts area-->
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<!--<script src="js/binary-animation.js"></script>-->
 </body>
 </html>
