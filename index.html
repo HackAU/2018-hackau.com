@@ -35,16 +35,22 @@
                 $("#menu").click(function() {
                     if($('#menu-list').css('display') == 'none') {
                         $("#menu").parent().css('border-bottom', "0.5px solid white");
-                        $("#menu-list").show();
+                        $("#menu-list").css('border-bottom', "0.5px solid white");
+                        $("#menu-list").slideDown("fast");
                     }
                     else {
-                        $("#menu-list").hide();
-                        $("#menu").parent().css('border-bottom', "0");
+                        $("#menu-list").slideUp("fast", function() {
+                            $("#menu").parent().css('border-bottom', "0");
+                            $("#menu-list").css('border-bottom', "0");
+                        });
+
                     }
                 });
                 $("#menu-list").find("li").find("div").find("a").click(function() {
-                    $("#menu-list").hide();
-                    $("#menu").parent().css('border-bottom', "0");
+                    $("#menu-list").slideUp("fast", function() {
+                        $("#menu").parent().css('border-bottom', "0");
+                        $("#menu-list").css('border-bottom', "0");
+                    });
                 });
 
             }
