@@ -87,12 +87,16 @@
 
 .buffer-top {
     margin-top: 5%;
-
 }
 
 .buffer-right {
     margin-right: 8%;
 }
+
+.buffer-left {
+    margin-right: 8%;
+}
+
 
 .button-register{
     color: white;
