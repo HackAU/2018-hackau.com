@@ -93,6 +93,10 @@ p {
     .lead {
         font-size: 21px
     }
+    .sponsors-img{
+        width: auto;
+        height: auto;
+    }
 }
 
 small, .small {
@@ -320,6 +324,10 @@ body:before {
 @media only screen and (max-width: 375px) {
     h4 {
         font-size: 6vw
+    }
+    .sponsors-img{
+        width: auto;
+        height: auto;
     }
 
     .logotxt {
@@ -570,6 +578,11 @@ h1, h2 {
         -ms-flex-preferred-size: 50% !important;
         flex-basis: 50% !important;
     }
+    .sponsors-img{
+        width: auto;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -579,6 +592,10 @@ h1, h2 {
         min-width: 100% !important;
         -ms-flex-preferred-size: 100% !important;
         flex-basis: 100% !important;
+    }
+    .sponsors-img{
+        width: auto;
+        height: auto;
     }
 }
 
@@ -725,6 +742,11 @@ h3 {
         border: none;
         width: 100%;
         margin-top: 0;
+    }
+
+    .sponsors-img{
+        width: auto;
+        height: auto;
     }
 
     .events-detail {
