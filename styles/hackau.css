@@ -131,13 +131,8 @@
     margin-bottom: 5vh;
 }
 
-img .ml {
-    margin-left: 25px;
-}
 
-img .mr {
-    margin-right: 25px;
-}
+
 
 .sponsor-images {
     text-align: center;
@@ -185,6 +180,10 @@ img .mr {
 .sponsor-images img.ml {
     margin-left: 25px;
 }
+.sponsor-images img.mt {
+    margin-left: 25px;
+}
+
 .sponsor-images img.mega-portrait {
     width: 15%;
 }
