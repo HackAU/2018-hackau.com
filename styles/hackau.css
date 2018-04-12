@@ -133,6 +133,7 @@
 
 
 
+
 .sponsor-images {
     text-align: center;
 }
@@ -179,6 +180,10 @@
 .sponsor-images img.ml {
     margin-left: 25px;
 }
+.sponsor-images img.mt {
+    margin-left: 25px;
+}
+
 .sponsor-images img.mega-portrait {
     width: 15%;
 }
