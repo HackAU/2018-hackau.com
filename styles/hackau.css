@@ -156,23 +156,25 @@
     width: 38%;
 }
 .sponsor-images .kilo {
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
 }
 .sponsor-images .kilo img{
-    width: 25%;
+    width: 22%;
 }
 
 .sponsor-images .kilo svg{
     width: 25%;
 }
-.sponsor-images .mili {
-    margin-bottom: 8vh;
-}
+
 .sponsor-images .mili img {
-    width: 20%;
+    /*margin-top: 13px;*/
+    width: 16%;
 }
 .sponsor-images .micro img {
-    width: 15%;
+    width: 11%;
+}
+.sponsor-images .mergin-bottom img {
+    margin-bottom: 25px;
 }
 .sponsor-images img.mr {
     margin-right: 25px;
