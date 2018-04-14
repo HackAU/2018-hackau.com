@@ -131,6 +131,24 @@
     margin-bottom: 5vh;
 }
 
+.hardware-listings .title {
+    font-size: 1.6em;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    line-height: 1;
+    font-size: 1.5em;
+    color: #00FF2A;
+    font-family: minecraftia
+}
+.hardware-listings .info {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    font-weight: normal;
+}
+.hardware-listings .listing {
+    margin-bottom: 5vh;
+}
+
 
 
 
