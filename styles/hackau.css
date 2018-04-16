@@ -255,3 +255,10 @@
     fill: #265A8F;
 
 }
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
