@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HackAU | May 1st - 2nd | Ariel | 100 Hackers</title>
+    <link rel="shortcut icon" href="images/trans.png" type="image/x-icon"/>
+
+    <meta name="description"
+          content="Join us! HackAU, Ariel University's first hackathon. 100 hackers. 25 hours.  May 01th - 02th.">
+
+    <!--Open graph properties-->
+    <meta property="og:title" content="HackAU |  May 1st - 2nd | Ariel | 100 Hackers">
+    <meta property="og:site_name" content="HackAU">
+    <meta property="og:description"
+          content="Join us! HackAU, Ariel University's first hackathon. 100 hackers. 25 hours.  May 01th - 02th.">
+    <meta property="og:image"
+          content="https://scontent.fsdv1-1.fna.fbcdn.net/v/t1.0-9/20914657_153699325208779_4282998722667087312_n.png?oh=afcb9ceae1850e63f2c145b494b350da&oe=5ADB9410">
+    <meta property="og:url" content="https://hack-au.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <!--css files-->
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="styles/style.css" data-finger-print>
+    <link rel="stylesheet" href="styles/hackau.css" data-finger-print>
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--scripts area-->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script>
+        $(document).ready(function () {
+            // Configure/customize these variables.
+            var showChar = 150;  // How many characters are shown by default
+            var ellipsestext = "...";
+            var moretext = "Show more >";
+            var lesstext = "Show less";
+
+
+            $('.more').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- header -->
+<div id="header" class="row">
+    <div>
+        <img id="menu" class="menu" src="images/ic_menu_white_24dp_2x.png"/>
+    </div>
+    <ul id="menu-list">
+        <li>
+            <div><a id="menu-register" href="./">Home</a></div>
+            <div></div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="page text-center buffer-top">
+    <div class="content">
+        <div class="container">
+
+            <div class="row" id="title">
+                <div class="subtitle" style="font-size: 3em"> Challenges <br></div>
+            </div>
+
+            <div class="row">
+                <div class="offset-by-two eight columns" style="line-height: 1.5;">
+                    <h4>Check the list below! we might have an idea to offer!</h4>
+                    <h4 style="color:red;">Hardware will be offered upon request</h4>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row hardware-listings buffer-top">
+                <div class="column listing">
+                    <div class="title">Open Source</div>
+                    <div class="info"  style="text-align: left;">
+                            <p>
+                                The challenge is to understand how this program works, and add to it a new computational-geometry algorithm, such as: finding a shortest hamiltonian path, finding a largest blocked circle, dividing a polygon to equi-area parts, etc.
+                            </p>
+                            <br />
+                            <strong>Advantages:</strong>
+                            <li>Contributing to a beautiful software with many worldwide users.</li>
+                            <li>Cooperating with many worldwide software developers.</li>
+                            <li>Contributing to an open-source project greatly improves your CV.</li>
+                            <br />
+
+                            <strong>Challenges:</strong>
+                            <li>Downloading, compiling and running such a large software-system is itself a project.</li>
+                            <li>Understanding how it works is another project. So, even a single addition could be considered a great achievement.</li>
+                    </div>
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="mailto:erelsgl@gmail.com">Contact</a>
+                    </button>
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="https://github.com/geogebra/geogebra" target="_blank">Github</a>
+                    </button>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row hardware-listings">
+                <div class="column listing">
+                    <div class="title">Drones</div>
+                    <div class="info" style="text-align: left;">
+                        <p>
+                            Because they become available, cheap and have improved performance, they make it possible to perform many useful tasks, but may pose a safety and security hazard. In the proposed project we will refer to the situation in which a skimmer tries to protect a certain area from another skimmer.
+                        </p>
+                        <p>
+                            In the first stage of the proposed project we will try to create an application in which the hovercraft reaches autonomously to a certain point in a space where a static target (eg ball or balloon) is located. A system of cameras identifies the target location and directs the skimmer to the same point.
+                            The project is based on hardware (cameras and remote) that will be available to participants.
+                        </p>
+                    </div>
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="mailto:shraga@ariel.ac.il">Contact</a>
+                    </button>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row hardware-listings">
+                <div class="column listing">
+                    <div class="title">Immersive Marketing / Wearable Computing</div>
+                    <div class="info" style="text-align: left;">
+                        <p>
+                            The idea presented below comes from the areas of innovation in marketing and advertising combined with technologies called Marketing Immersive
+                            To refresh marketing experiences and to disseminate content to the mind in creative and original ways, including the "customer cover" and its physical integration as part of the experience.
+                            For example, an advertisement for hot sandwiches that is placed at a bus station and includes heating elements in the ceiling of the station.
+                        </p>
+                        <br />
+                        <strong>Typical Scenario:</strong>
+                        <p>
+                            In a typical pub, people sit and enjoy themselves, at some point an advertisement appears on the television screens showing a soccer player
+                            Advertising a certain type of drink, at the end of the advertisement the player kicks in the direction of the screen and the ball hits the "inside". This hit constitutes a signal which brings to life a variety of products (glasses, scarves) and they present lighting games in a variety of colors.
+                            Other situations such as football can be described, with fans of a group who have scored a goal and hold a cup or wear team shirts to display a dazzling and coordinated lighting (such as a wave of light) during the joyous joy.
+                        </p>
+                        <br />
+                        <strong>Challenges:</strong>
+                        <li>Local synchronization capability between the television broadcast and decision making</li>
+                        <li>Select an appropriate communication translator (IR, WiFI, BLE) and develop a simple and reliable protocol</li>
+                        <br />
+                        <strong>What do I need?</strong>
+                        <p>
+                            Physical computing components including MCU such as 8266 / ESP32, LED bulbs, sensors and IR lights (upon request). C / C ++ language
+                        </p>
+                        <br />
+                        <strong>Development</strong>
+                        <p>
+                            C / C ++ language
+                        </p>
+                    </div>
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="mailto:yossi@integrative.net">Contact</a>
+                    </button>
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="http://integrative.net/" target="_blank">Website</a>
+                    </button>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <h4>If you didn't find an idea, we might be able to provide you!</h4>
+                <div class="offset-by-two eight columns content">
+                    <button class="button button-register buffer-top">
+                        <a style="color: white;text-decoration: none;" href="mailto:info@hack-au.com">Request
+                            challenge</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div><!-- wrapper end -->
+
+
+<!--footer-->
+<div class="footer">
+    <div class="socials-links">
+        <a class="fa fa-2x fa-envelope" target="_blank" href="mailto:info@hack-au.com"></a>
+        <a class="fa fa-2x fa-facebook-official" target="_blank"
+           href="https://www.facebook.com/Hack-AU-153697891875589/"></a>
+        <a class="fa fa-2x fa-github" target="_blank" href="https://github.com/HackAU"></a>
+    </div>
+    <p><font color="white">Made with <span id="heart">❤</span> by HackAU Team</font></p>
+</div>
+</div>
+
+
+</body>
+</html>
