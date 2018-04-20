@@ -232,7 +232,6 @@
 
 .sponsor-images .top-logo-ariel img {
     width: 100%;
-    padding-left: 20px;
 }
 
 .sponsor-images .top-logo-ariel svg {
@@ -245,9 +244,17 @@
 
 .sponsor-images .top-logo-field-center img {
     width: 100%;
-    padding-right: 20px;
+    padding-top: 11px;
+
+}
 
 
+.logo-div{
+    margin: 0 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0 30px 30px 0;
+    width: 100%;
 }
 
 @media (max-width: 400px) {
@@ -255,12 +262,15 @@
         margin-bottom: -7vh;
     }
     .sponsor-images .top-logo-ariel img {
-        width: 40%;
+        width: 0;
         padding-left: 0;
     }
     .sponsor-images .top-logo-field-center img {
         width: 0;
         padding-right: 0;
+    }
+    .logo-div {
+        display: none;
     }
 }
 
