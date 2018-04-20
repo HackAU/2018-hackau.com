@@ -16,10 +16,10 @@
 
     #header {
         background-color: #141F34;
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index:100;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
         text-align: center;
     }
 
@@ -50,12 +50,13 @@
     .href-padding {
         padding-top: 48px;
     }
+
     #header {
         background-color: #141F34;
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index:100;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
         text-align: center;
     }
 
@@ -82,8 +83,8 @@
     #menu-register {
         color: white;
     }
-}
 
+}
 
 .buffer-top {
     margin-top: 5%;
@@ -97,8 +98,7 @@
     margin-right: 8%;
 }
 
-
-.button-register{
+.button-register {
     color: white;
     display: inline-block;
     height: 50px;
@@ -122,11 +122,13 @@
     font-size: 1.6em;
     color: #E91753;
 }
+
 .faq-questions .answer {
     font-size: 1.4em;
     line-height: 1.7em;
     font-weight: normal;
 }
+
 .faq-questions .question {
     margin-bottom: 5vh;
 }
@@ -140,25 +142,24 @@
     color: #FF9800;
     font-family: minecraftia;
 }
+
 .hardware-listings .info {
     font-size: 1.4em;
     line-height: 1.7em;
     font-weight: normal;
 }
+
 .hardware-listings .listing {
     margin-bottom: 5vh;
 }
 
-
-
-
 .sponsor-images {
     text-align: center;
 }
+
 .sponsor-images .peta {
     margin-bottom: 10vh;
 }
-
 
 .sponsor-images img {
     transition: transform .2s; /* Animation */
@@ -167,29 +168,36 @@
 .sponsor-images img:hover {
     transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
 .sponsor-images .peta img {
     width: 63%;
 }
+
 .sponsor-images .giga {
     margin-bottom: 10vh;
 }
+
 .sponsor-images .giga img {
     width: 50%;
 }
+
 .sponsor-images .mega {
     margin-bottom: 8vh;
 }
+
 .sponsor-images .mega img {
     width: 38%;
 }
+
 .sponsor-images .kilo {
     margin-bottom: 2vh;
 }
-.sponsor-images .kilo img{
+
+.sponsor-images .kilo img {
     width: 22%;
 }
 
-.sponsor-images .kilo svg{
+.sponsor-images .kilo svg {
     width: 25%;
 }
 
@@ -197,28 +205,77 @@
     /*margin-top: 13px;*/
     width: 16%;
 }
+
 .sponsor-images .micro img {
     width: 11%;
 }
+
 .sponsor-images .mergin-bottom img {
     margin-bottom: 25px;
 }
+
 .sponsor-images img.mr {
     margin-right: 25px;
 }
+
 .sponsor-images img.ml {
     margin-left: 25px;
 }
+
 .sponsor-images img.mt {
     margin-left: 25px;
+}
+
+.sponsor-images .top-logo-ariel {
+    margin-bottom: 2vh;
+}
+
+.sponsor-images .top-logo-ariel img {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.sponsor-images .top-logo-ariel svg {
+    width: 25%;
+}
+
+.sponsor-images .top-logo-field-center {
+    margin-bottom: 2vh;
+}
+
+.sponsor-images .top-logo-field-center img {
+    width: 100%;
+    padding-right: 20px;
+
+
+}
+
+@media (max-width: 400px) {
+    .sponsor-images .top-logo-ariel {
+        margin-bottom: -7vh;
+    }
+    .sponsor-images .top-logo-ariel img {
+        width: 40%;
+        padding-left: 0;
+    }
+    .sponsor-images .top-logo-field-center img {
+        width: 0;
+        padding-right: 0;
+    }
+}
+
+.sponsor-images .top-logo-field-center svg {
+    width: 25%;
 }
 
 .sponsor-images img.mega-portrait {
     width: 15%;
 }
+
 .sponsor-images img.giga-portrait {
     width: 18%;
 }
+
 .sponsor-images .separator {
     height: 5vh;
 }
@@ -227,10 +284,12 @@
     text-align: center;
     margin-bottom: 10vh;
 }
+
 .partners img {
     width: 23%;
     margin: 0px 20px;
 }
+
 .partners .separator {
     height: 5vh;
 }
@@ -241,7 +300,6 @@
     height: 400px;
 }
 
-
 .mlh-localhost-svg-animated {
     -webkit-transition: fill 0.2s ease-out;
     -moz-transition: fill 0.2s ease-out;
@@ -250,8 +308,7 @@
     transition: fill 0.2s ease-out;
 }
 
-
-.mlh-localhost-svg-animated:hover{
+.mlh-localhost-svg-animated:hover {
     fill: #265A8F;
 
 }
@@ -259,6 +316,7 @@
 .morecontent span {
     display: none;
 }
+
 .morelink {
     display: block;
 }
